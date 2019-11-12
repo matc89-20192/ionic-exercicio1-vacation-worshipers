@@ -1,20 +1,25 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Page One</ion-title>
+    <ion-title>Exercicio 1</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  
+  <ion-item>
+    <ion-label color="primary" floating>Nome</ion-label>
+    <ion-input [(ngModel)]="editNome" id="editNome"> {{ editNome }} </ion-input> 
+  </ion-item>
+  <br>
+  <button ion-button round (click)="buttonClick()" id="btnCumprimentar">Cumprimentar</button>
+  <br>
+  
+  
+  <h4 id="labelMensagem">{{ labelMensagem }}</h4>
+  
+  
+    
+  
+  
 
-  <img src="assets/icon/favicon.ico" alt="" />
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>

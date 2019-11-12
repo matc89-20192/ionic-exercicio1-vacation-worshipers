@@ -8,8 +8,14 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class Page1 {
 
+  public editNome:string = "";
+  public labelMensagem:string = "Alô, Mundo!";
   constructor(public navCtrl: NavController) {
 
+  }
+
+  buttonClick(){
+    this.labelMensagem="Alô, "+this.editNome+"!";
   }
 
 }
